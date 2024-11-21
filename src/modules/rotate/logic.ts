@@ -187,7 +187,7 @@ export class Logic {
           this.localConfig.title
         ]),
         h('div', { class: 'gc-icon-block' }, [
-          makeCloseSvgIcon({ ...this.iconStyles.value, clickEvent: this.handler.refreshEvent }),
+          makeCloseSvgIcon({ ...this.iconStyles.value, clickEvent: this.handler.closeEvent }),
           makeRefreshSvgIcon({ ...this.iconStyles.value, clickEvent: this.handler.refreshEvent })
         ]),
       ]),
