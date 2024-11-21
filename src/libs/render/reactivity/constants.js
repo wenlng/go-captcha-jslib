@@ -1,0 +1,1 @@
+export var ReactiveFlags;!function(e){e.IS_REACTIVE="__v_isReactive"}(ReactiveFlags||(ReactiveFlags={}));export var DirtyLevels;!function(e){e[e.Dirty=4]="Dirty",e[e.NoDirty=0]="NoDirty"}(DirtyLevels||(DirtyLevels={}));

@@ -1,0 +1,1 @@
+import{currentInstance}from"./component";export function provide(n,e){if(!currentInstance)return;const r=currentInstance.parent?.provides;let t=currentInstance.provides;r===t&&(t=currentInstance.provides=Object.create(t)),t[n]=e}export function inject(n,e){if(!currentInstance)return;const r=currentInstance.parent?.provides;return r&&n in r?r[n]:e}

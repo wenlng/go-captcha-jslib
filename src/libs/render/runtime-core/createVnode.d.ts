@@ -1,0 +1,22 @@
+import { ShapeFlags } from "../shared";
+export declare const Text: unique symbol;
+export declare const Fragment: unique symbol;
+export declare function isVnode(value: any): any;
+export declare function isSameVnode(n1: any, n2: any): boolean;
+export declare function createVnode(type: any, props: any, children?: any, patchFlag?: any): {
+    __v_isVnode: boolean;
+    type: any;
+    props: any;
+    children: any;
+    key: any;
+    el: any;
+    shapeFlag: number | ShapeFlags;
+    ref: any;
+    patchFlag: any;
+};
+export declare function openBlock(): void;
+export declare function closeBlock(): void;
+export declare function setupBlock(vnode: any): any;
+export declare function createElementBlock(type: any, props: any, children: any, patchFlag?: any): any;
+export declare function toDisplayString(value: any): any;
+export { createVnode as createElementVNode };

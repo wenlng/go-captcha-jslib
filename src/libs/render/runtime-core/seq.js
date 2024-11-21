@@ -1,0 +1,1 @@
+export default function getSequence(e){const t=[0],n=t.slice(0);let l,o,c;const f=e.length;for(let g=0;g<f;g++){const f=e[g];if(0!==f){if(e[t[t.length-1]]<f){n[g]=t[t.length-1],t.push(g);continue}}for(l=0,o=t.length-1;l<o;)c=(l+o)/2|0,e[t[c]]<f?l=c+1:o=c;f<e[t[l]]&&(n[g]=t[l-1],t[l]=g)}let g=t.length,h=t[g-1];for(;g-- >0;)t[g]=h,h=n[h];return t}

@@ -1,0 +1,1 @@
+export var PatchFlags;!function(a){a[a.TEXT=1]="TEXT",a[a.CLASS=2]="CLASS",a[a.STYLE=4]="STYLE"}(PatchFlags||(PatchFlags={}));

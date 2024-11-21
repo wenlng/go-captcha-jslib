@@ -1,0 +1,1 @@
+import{nodeOps}from"./nodeOps";import patchProp from"./patchProp";import{createRenderer}from"../runtime-core";const renderOptions=Object.assign({patchProp:patchProp},nodeOps);export const render=(r,e)=>createRenderer(renderOptions).render(r,e);export*from"../runtime-core";

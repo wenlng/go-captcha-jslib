@@ -1,0 +1,24 @@
+export declare function createComponentInstance(vnode: any, parent: any): {
+    data: any;
+    vnode: any;
+    subTree: any;
+    isMounted: boolean;
+    update: any;
+    props: {};
+    attrs: {};
+    slots: {};
+    propsOptions: any;
+    component: any;
+    proxy: any;
+    setupState: {};
+    exposed: any;
+    parent: any;
+    ctx: any;
+    provides: any;
+};
+export declare function initSlots(instance: any, children: any): void;
+export declare function setupComponent(instance: any): void;
+export declare let currentInstance: any;
+export declare const getCurrentInstance: () => any;
+export declare const setCurrentInstance: (instance: any) => void;
+export declare const unsetCurrentInstance: () => void;

@@ -1,0 +1,1 @@
+import{isObject}from"../shared";import{createVnode,isVnode}from"./createVnode";export function h(e,r,o){let n=arguments.length;return 2===n?isObject(r)&&!Array.isArray(r)?isVnode(r)?createVnode(e,null,[r]):createVnode(e,r):createVnode(e,null,r):(n>3&&(o=Array.from(arguments).slice(2)),3==n&&isVnode(o)&&(o=[o]),createVnode(e,r,o))}

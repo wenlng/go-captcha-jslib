@@ -1,0 +1,1 @@
+export const nodeOps={insert:(e,t,n)=>t.insertBefore(e,n||null),remove(e){const t=e.parentNode;t&&t.removeChild(e)},createElement:e=>document.createElement(e),createElementNS:(e,t)=>document.createElementNS(e,t),createText:e=>document.createTextNode(e),setText:(e,t)=>e.nodeValue=t,setElementText:(e,t)=>e.textContent=t,parentNode:e=>e.parentNode,nextSibling:e=>e.nextSibling};

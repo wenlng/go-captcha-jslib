@@ -1,0 +1,68 @@
+{
+  "name": "go-captcha-jslib",
+  "version": "1.0.0",
+  "private": false,
+  "description": "This is the javascript library for go-captcha",
+  "keywords": [
+    "go-captcha-js",
+    "go-captcha-javascript",
+    "go-captcha",
+    "gocaptcha",
+    "captcha-js",
+    "captcha-javascript",
+    "js-captcha",
+    "javascript-captcha",
+    "capts",
+    "gocapts"
+  ],
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build",
+    "build:dist": "node ./scripts/build.js"
+  },
+  "homepage": "https://github.com/wenlng/go-captcha-jslib",
+  "bugs": {
+    "url": "https://github.com/wenlng/go-captcha-jslib/issues"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenlng/go-captcha-jslib.git"
+  },
+  "author": "Awen",
+  "license": "MIT",
+  "main": "index.js",
+  "types": "./lib/index.d.ts",
+  "typings": "./lib/index.d.ts",
+  "module": "dist/gocaptchalib.cjs.js",
+  "unpkg": "./dist/gocaptchalib.global.js",
+  "jsdelivr": "./dist/gocaptchalib.global.js",
+  "exports": {
+    ".": {
+      "node": {
+        "module": "./dist/gocaptchalib.cjs.js",
+        "require": "./dist/gocaptchalib.cjs.js",
+        "import": "./index.mjs"
+      },
+      "browser": {
+        "import": "./dist/gocaptchalib.cjs.js",
+        "require": "./dist/gocaptchalib.cjs.js"
+      },
+      "default": "./dist/gocaptchalib.cjs.js"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*"
+  },
+  "browser": {
+    "dist/index.js": "./dist/gocaptchalib.global.js"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.1.1",
+    "@rspack/core": "^1.1.1",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^16.0.3",
+    "ts-node": "^10.9.2"
+  }
+}

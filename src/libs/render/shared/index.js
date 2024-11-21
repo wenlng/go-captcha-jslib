@@ -1,0 +1,1 @@
+export function isObject(t){return"object"==typeof t&&null!==t}export function isFunction(t){return null!==t&&"function"==typeof t}export function isString(t){return"string"==typeof t}export*from"./shapeFlags";export const hasOwn=(t,o)=>Object.prototype.hasOwnProperty.call(t,o);export*from"./patchFlags";

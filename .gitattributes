@@ -1,0 +1,3 @@
+*.ts linguist-language=typescript
+*.js linguist-language=javascript
+*.scss linguist-language=scss

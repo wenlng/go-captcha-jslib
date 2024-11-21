@@ -1,0 +1,1 @@
+import{patchAttr,patchClass,patchEvent,patchStyle}from"./patch";export default function patchProp(t,a,p,c){return"class"===a?patchClass(t,c):"style"===a?patchStyle(t,p,c):/^on[^a-z]/.test(a)?patchEvent(t,a,c):patchAttr(t,a,c)}

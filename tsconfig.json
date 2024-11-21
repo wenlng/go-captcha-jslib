@@ -1,0 +1,11 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "types": ["@rspack/core/module"],
+      "isolatedModules": true
+    },
+    "include": [
+      "./src"
+    ]
+  },
+}
