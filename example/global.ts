@@ -1,5 +1,5 @@
 // @ts-ignore
-export default GoCaptchaLib = window?.GoCaptchaLib || {
+export default GoCaptcha = window?.GoCaptcha || {
   Click: function (){},
   Slide: function (){},
   SlideRegion: function (){},

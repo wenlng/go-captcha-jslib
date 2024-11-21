@@ -1,6 +1,6 @@
 {
   "name": "go-captcha-jslib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "This is the javascript library for go-captcha",
   "keywords": [
@@ -36,27 +36,27 @@
   "main": "index.js",
   "types": "./lib/index.d.ts",
   "typings": "./lib/index.d.ts",
-  "module": "dist/gocaptchalib.cjs.js",
-  "unpkg": "./dist/gocaptchalib.global.js",
-  "jsdelivr": "./dist/gocaptchalib.global.js",
+  "module": "dist/gocaptcha.cjs.js",
+  "unpkg": "./dist/gocaptcha.global.js",
+  "jsdelivr": "./dist/gocaptcha.global.js",
   "exports": {
     ".": {
       "node": {
-        "module": "./dist/gocaptchalib.cjs.js",
-        "require": "./dist/gocaptchalib.cjs.js",
+        "module": "./dist/gocaptcha.cjs.js",
+        "require": "./dist/gocaptcha.cjs.js",
         "import": "./index.mjs"
       },
       "browser": {
-        "import": "./dist/gocaptchalib.cjs.js",
-        "require": "./dist/gocaptchalib.cjs.js"
+        "import": "./dist/gocaptcha.cjs.js",
+        "require": "./dist/gocaptcha.cjs.js"
       },
-      "default": "./dist/gocaptchalib.cjs.js"
+      "default": "./dist/gocaptcha.cjs.js"
     },
     "./package.json": "./package.json",
     "./dist/*": "./dist/*"
   },
   "browser": {
-    "dist/index.js": "./dist/gocaptchalib.global.js"
+    "dist/index.js": "./dist/gocaptcha.global.js"
   },
   "devDependencies": {
     "@rspack/cli": "^1.1.1",

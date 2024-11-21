@@ -1,10 +1,10 @@
-import GoCaptchaLib from "../global";
+import GoCaptcha from "../global";
 
 import {RotateImage, RotateThumbImage} from "../test-assets";
 
 export const RotateExample = () => {
   const el = document.getElementById("rotate-wrap");
-  const capt = new GoCaptchaLib.Rotate(el)
+  const capt = new GoCaptcha.Rotate(el)
 
   capt.mount()
   capt.setConfig({

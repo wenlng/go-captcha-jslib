@@ -1,10 +1,10 @@
-import GoCaptchaLib from "../global";
+import GoCaptcha from "../global";
 
 import {SlideImage, SlideThumbImage} from "../test-assets";
 
 export const SlideExample = () => {
   const el = document.getElementById("slide-wrap");
-  const capt = new GoCaptchaLib.Slide(el)
+  const capt = new GoCaptcha.Slide(el)
 
   capt.mount()
   capt.setConfig({

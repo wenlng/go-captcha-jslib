@@ -1,10 +1,10 @@
-import GoCaptchaLib from "../global";
+import GoCaptcha from "../global";
 
 import {ClickImage, ClickThumbImage} from "../test-assets";
 
 export const ClickExample = () => {
   const el = document.getElementById("click-wrap");
-  const capt = new GoCaptchaLib.Click(el)
+  const capt = new GoCaptcha.Click(el)
 
   capt.mount()
   capt.setConfig({

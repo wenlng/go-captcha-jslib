@@ -1,10 +1,10 @@
-import GoCaptchaLib from "../global";
+import GoCaptcha from "../global";
 
 import {SlideImage, SlideThumbImage} from "../test-assets";
 
 export const SlideRegionExample = () => {
   const el = document.getElementById("slide-region-wrap");
-  const capt = new GoCaptchaLib.SlideRegion(el)
+  const capt = new GoCaptcha.SlideRegion(el)
 
   capt.mount()
   capt.setConfig({

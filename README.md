@@ -18,15 +18,16 @@ pnpm install go-captcha-jslib
 
 ### Import Module
 ``` javascript
+
 // Import css
-import "go-captcha-jslib/dist/gocaptchalib.global.css"
+import "go-captcha-jslib/dist/gocaptcha.global.css"
 
 // Import Module
-const GoCaptchaLib = require('go-captcha-jslib')
-console.log(GoCaptchaLib)
+import { GoCaptcha } from "go-captcha-jslib";
+console.log(GoCaptcha)
 // OR
-import { GoCaptchaLib } from "gocaptchalib";
-console.log(GoCaptchaLib)
+const GoCaptcha = require('go-captcha-jslib')
+console.log(GoCaptcha)
 
 ```
 
@@ -39,13 +40,14 @@ Bower Tool
 bower install wenlng/go-captcha-jslib --save
 ```
 ```html
-<!-- Js -->
-<script src="/bower_components/go-captcha-jslib/dist/gocaptchalib.global.js"></script>
+
 <!-- css -->
-<link href="/bower_components/go-captcha-jslib/dist/gocaptchalib.global.css" rel="stylesheet">
+<link href="/bower_components/go-captcha-jslib/dist/gocaptcha.global.css" rel="stylesheet">
+<!-- Js -->
+<script src="/bower_components/go-captcha-jslib/dist/gocaptcha.global.js"></script>
 
 <script>
-    console.log(window.GoCaptchaLib)
+    console.log(window.GoCaptcha)
 </script>
 ```
 
@@ -53,12 +55,12 @@ bower install wenlng/go-captcha-jslib --save
 
 ```html
 <!-- Js -->
-<script src="https://unpkg.com/go-captcha-jslib@1.0.1/dist/gocaptchalib.global.js"></script>
+<script src="https://unpkg.com/go-captcha-jslib@1.0.1/dist/gocaptcha.global.js"></script>
 <!-- css -->
-<link href="https://unpkg.com/go-captcha-jslib@1.0.1/dist/gocaptchalib.global.css" rel="stylesheet">
+<link href="https://unpkg.com/go-captcha-jslib@1.0.1/dist/gocaptcha.global.css" rel="stylesheet">
 
 <script>
-    console.log(window.GoCaptchaLib)
+    console.log(window.GoCaptcha)
 </script>
 ```
 <br/>
@@ -70,7 +72,7 @@ bower install wenlng/go-captcha-jslib --save
 
 <script>
   const el = document.getElementById("click-wrap");
-  const capt = new GoCaptchaLib.Click(el)
+  const capt = new GoCaptcha.Click(el)
 
   capt.mount()
   
@@ -153,7 +155,7 @@ interface ClickInstanceMethods {
 
 <script>
   const el = document.getElementById("slide-wrap");
-  const capt = new GoCaptchaLib.Slide(el)
+  const capt = new GoCaptcha.Slide(el)
 
   capt.mount()
   
@@ -242,7 +244,7 @@ interface SlideInstanceMethods {
 
 <script>
   const el = document.getElementById("slide-region-wrap");
-  const capt = new GoCaptchaLib.SlideRegion(el)
+  const capt = new GoCaptcha.SlideRegion(el)
 
   capt.mount()
   
@@ -328,7 +330,7 @@ interface SlideRegionInstanceMethods {
 
 <script>
   const el = document.getElementById("rotate-wrap");
-  const capt = new GoCaptchaLib.Rotate(el)
+  const capt = new GoCaptcha.Rotate(el)
 
   capt.mount()
   
@@ -413,7 +415,7 @@ interface ClickInstanceMethods {
 
 <script>
   const el = document.getElementById("button-wrap");
-  const capt = new GoCaptchaLib.Button(el)
+  const capt = new GoCaptcha.Button(el)
 
   capt.mount()
   

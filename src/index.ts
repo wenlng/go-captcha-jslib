@@ -6,7 +6,7 @@ import { Slide } from './modules/slide'
 import { SlideRegion } from './modules/slide-region'
 import { Rotate } from './modules/rotate'
 
-export const GoCaptchaLib = {
+export const GoCaptcha = {
   Button,
   Click,
   Slide,
