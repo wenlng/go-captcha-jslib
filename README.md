@@ -53,9 +53,9 @@ bower install wenlng/go-captcha-jslib --save
 
 ```html
 <!-- Js -->
-<script src="https://unpkg.com/go-captcha-jslib@1.0.0/dist/gocaptchalib.global.js"></script>
+<script src="https://unpkg.com/go-captcha-jslib@1.0.1/dist/gocaptchalib.global.js"></script>
 <!-- css -->
-<link href="https://unpkg.com/go-captcha-jslib@1.0.0/dist/gocaptchalib.global.css" rel="stylesheet">
+<link href="https://unpkg.com/go-captcha-jslib@1.0.1/dist/gocaptchalib.global.css" rel="stylesheet">
 
 <script>
     console.log(window.GoCaptchaLib)
