@@ -7,7 +7,6 @@ const configList = [
     target: ['web', 'es5'],
     output: {
       library: {
-        name: 'GoCaptchaLib',
         type: 'umd',
       },
       filename: '[name].global.js',
