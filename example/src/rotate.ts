@@ -4,13 +4,16 @@ import {RotateImage, RotateThumbImage} from "../test-assets";
 
 export const RotateExample = () => {
   const el = document.getElementById("rotate-wrap");
-  const capt = new GoCaptcha.Rotate(el)
-
-  capt.mount()
-  capt.setConfig({
+  const capt = new GoCaptcha.Rotate({
     width: 300,
     height: 220,
   })
+
+  capt.mount(el)
+  // capt.setConfig({
+  //   width: 300,
+  //   height: 220,
+  // })
 
   capt.setEvents({
     rotate(angle) {

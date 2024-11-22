@@ -4,13 +4,16 @@ import {SlideImage, SlideThumbImage} from "../test-assets";
 
 export const SlideExample = () => {
   const el = document.getElementById("slide-wrap");
-  const capt = new GoCaptcha.Slide(el)
-
-  capt.mount()
-  capt.setConfig({
+  const capt = new GoCaptcha.Slide({
     width: 300,
     height: 220,
   })
+
+  capt.mount(el)
+  // capt.setConfig({
+  //   width: 300,
+  //   height: 220,
+  // })
   capt.setEvents({
     move(x,  y) {
       console.log('move - ', x, y)

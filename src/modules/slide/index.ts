@@ -1,11 +1,15 @@
 import {Logic} from "./logic";
 import {SlideConfig, SlideData, SlideEvent, defaultSlideData, defaultConfig} from "./types";
+import {ButtonConfig} from "../button/types";
 
 export class Slide {
   logic: Logic
 
-  constructor(private el: HTMLElement) {
+  private el: HTMLElement
+
+  constructor(config: ButtonConfig = {}) {
     this.logic = new Logic()
+    this.setConfig(config)
   }
 
   setConfig(config: SlideConfig = {}) {
@@ -27,13 +31,16 @@ export class Slide {
     return this
   }
 
-  mount() {
-    this.logic.mount(this.el)
+  mount(el: HTMLElement) {
+    if (this.el) return
+    this.logic.mount(el)
+    this.el = el
     return this
   }
 
   destroy() {
     this.logic.unmount()
+    this.el = null
     return this
   }
 

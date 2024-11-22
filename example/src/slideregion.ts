@@ -4,13 +4,16 @@ import {SlideImage, SlideThumbImage} from "../test-assets";
 
 export const SlideRegionExample = () => {
   const el = document.getElementById("slide-region-wrap");
-  const capt = new GoCaptcha.SlideRegion(el)
-
-  capt.mount()
-  capt.setConfig({
+  const capt = new GoCaptcha.SlideRegion({
     width: 300,
     height: 220,
   })
+
+  capt.mount(el)
+  // capt.setConfig({
+  //   width: 300,
+  //   height: 220,
+  // })
   capt.setEvents({
     move(x,  y) {
       console.log('move - ', x, y)

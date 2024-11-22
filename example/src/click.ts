@@ -4,18 +4,22 @@ import {ClickImage, ClickThumbImage} from "../test-assets";
 
 export const ClickExample = () => {
   const el = document.getElementById("click-wrap");
-  const capt = new GoCaptcha.Click(el)
+  const capt = new GoCaptcha.Click({
+    width: 300,
+    height: 220,
+    // iconSize: 30,
+  })
 
-  capt.mount()
-  capt.setConfig({
-      width: 300,
-      height: 220,
-      // iconSize: 30,
-    })
-    // capt.setData({
-    //   image: ClickImage,
-    //   thumb: ClickThumbImage,
-    // })
+  capt.mount(el)
+  // capt.setConfig({
+  //     width: 300,
+  //     height: 220,
+  //     // iconSize: 30,
+  //   })
+  // capt.setData({
+  //   image: ClickImage,
+  //   thumb: ClickThumbImage,
+  // })
   capt.setEvents({
       click(x,  y) {
         console.log('click - ', x, y)
