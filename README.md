@@ -55,9 +55,9 @@ bower install wenlng/go-captcha-jslib --save
 
 ```html
 <!-- Js -->
-<script src="https://unpkg.com/go-captcha-jslib@1.0.3/dist/gocaptcha.global.js"></script>
+<script src="https://unpkg.com/go-captcha-jslib@1.0.4/dist/gocaptcha.global.js"></script>
 <!-- css -->
-<link href="https://unpkg.com/go-captcha-jslib@1.0.3/dist/gocaptcha.global.css" rel="stylesheet">
+<link href="https://unpkg.com/go-captcha-jslib@1.0.4/dist/gocaptcha.global.css" rel="stylesheet">
 
 <script>
     console.log(window.GoCaptcha)
@@ -72,14 +72,17 @@ bower install wenlng/go-captcha-jslib --save
 
 <script>
   const el = document.getElementById("click-wrap");
-  const capt = new GoCaptcha.Click(el)
-
-  capt.mount()
-  
-  capt.setConfig({
+  const capt = new GoCaptcha.Click({
     width: 300,
     height: 220,
   })
+
+  capt.mount(el)
+  
+  // capt.setConfig({
+  //   width: 300,
+  //   height: 220,
+  // })
   
   capt.setData({
     image: 'xxx',
@@ -140,7 +143,7 @@ interface ClickInstanceMethods {
   setConfig: (config: ClickConfig) => void,
   setData: (data: ClickData) => void,
   setEvents: (events: ClickEvents) => void,
-  mount: () => void,
+  mount: (el: HTMLElement) => void,
   destroy: () => void,
   reset: () => void,
   clear: () => void,
@@ -155,14 +158,17 @@ interface ClickInstanceMethods {
 
 <script>
   const el = document.getElementById("slide-wrap");
-  const capt = new GoCaptcha.Slide(el)
-
-  capt.mount()
-  
-  capt.setConfig({
+  const capt = new GoCaptcha.Slide({
     width: 300,
     height: 220,
   })
+
+  capt.mount(el)
+  
+  // capt.setConfig({
+  //   width: 300,
+  //   height: 220,
+  // })
   
   capt.setData({
     image: 'xxx',
@@ -229,7 +235,7 @@ interface SlideInstanceMethods {
   setConfig: (config: SlideConfig) => void,
   setData: (data: SlideData) => void,
   setEvents: (events: SlideEvents) => void,
-  mount: () => void,
+  mount: (el: HTMLElement) => void,
   destroy: () => void,
   reset: () => void,
   clear: () => void,
@@ -244,14 +250,17 @@ interface SlideInstanceMethods {
 
 <script>
   const el = document.getElementById("slide-region-wrap");
-  const capt = new GoCaptcha.SlideRegion(el)
-
-  capt.mount()
-  
-  capt.setConfig({
+  const capt = new GoCaptcha.SlideRegion({
     width: 300,
     height: 220,
   })
+
+  capt.mount(el)
+  
+  // capt.setConfig({
+  //   width: 300,
+  //   height: 220,
+  // })
   
   capt.setData({
     image: 'xxx',
@@ -314,7 +323,7 @@ interface SlideRegionInstanceMethods {
   setConfig: (config: SlideRegionConfig) => void,
   setData: (data: SlideRegionData) => void,
   setEvents: (events: SlideRegionEvents) => void,
-  mount: () => void,
+  mount: (el: HTMLElement) => void,
   destroy: () => void,
   reset: () => void,
   clear: () => void,
@@ -330,14 +339,17 @@ interface SlideRegionInstanceMethods {
 
 <script>
   const el = document.getElementById("rotate-wrap");
-  const capt = new GoCaptcha.Rotate(el)
-
-  capt.mount()
-  
-  capt.setConfig({
+  const capt = new GoCaptcha.Rotate({
     width: 300,
     height: 220,
   })
+
+  capt.mount(el)
+  
+  // capt.setConfig({
+  //   width: 300,
+  //   height: 220,
+  // })
   
   capt.setData({
     image: 'xxx',
@@ -398,7 +410,7 @@ interface ClickInstanceMethods {
   setConfig: (config: ClickConfig) => void,
   setData: (data: ClickData) => void,
   setEvents: (events: ClickEvents) => void,
-  mount: () => void,
+  mount: (el: HTMLElement) => void,
   destroy: () => void,
   reset: () => void,
   clear: () => void,
@@ -415,14 +427,17 @@ interface ClickInstanceMethods {
 
 <script>
   const el = document.getElementById("button-wrap");
-  const capt = new GoCaptcha.Button(el)
-
-  capt.mount()
-  
-  capt.setConfig({
-    width: 200,
-    height: 28,
+  const capt = new GoCaptcha.Button({
+    width: 300,
+    height: 220,
   })
+
+  capt.mount(el)
+  
+  // capt.setConfig({
+  //   width: 200,
+  //   height: 28,
+  // })
   
   capt.setState({
     title: 'xxx',
@@ -455,7 +470,7 @@ interface ButtonState {
 interface ButtonInstanceMethods {
   setConfig: (config: ButtonConfig) => void,
   setState: (data: ButtonState) => void,
-  mount: () => void,
+  mount: (el: HTMLElement) => void,
   destroy: () => void,
 }
 
