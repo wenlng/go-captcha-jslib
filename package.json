@@ -1,6 +1,6 @@
 {
   "name": "go-captcha-jslib",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "description": "This is the javascript library for go-captcha",
   "keywords": [
