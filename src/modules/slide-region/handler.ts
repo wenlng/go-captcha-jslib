@@ -33,6 +33,10 @@ export function useHandler(
   }
 
   const dragEvent = (e: Event|any) => {
+    if (!checkTargetFather(containerRef.value, e)) {
+      return
+    }
+
     const touch = e.touches && e.touches[0];
     const offsetLeft = tileRef.value.offsetLeft
     const offsetTop = tileRef.value.offsetTop
@@ -102,12 +106,12 @@ export function useHandler(
         return
       }
 
+      clearEvent()
       if (!isMoving) {
         return
       }
 
       isMoving = false
-      clearEvent()
 
       if (tileLeft < 0 || tileTop < 0) {
         return

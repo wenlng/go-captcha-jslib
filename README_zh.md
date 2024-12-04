@@ -1,21 +1,23 @@
 <div align="center">
 <img width="120" style="padding-top: 50px; margin: 0;" src="http://47.104.180.148/go-captcha/gocaptcha_logo.svg?v=1"/>
 <h1 style="margin: 0; padding: 0">Go Captcha</h1>
-<p>Behavior Captcha For Javascript</p>
-
+<p>Javascript 行为验证码</p>
 </div>
 
 <br/>
 
-> English | [中文](README_zh.md)
+> [English](README.md) | 中文
 
 <br/>
 
-<p> ⭐️ If it helps you, please give a star.</p>
+<p style="text-align: center"> ⭐️ 如果能帮助到你，请随手给点一个star</p>
+<p style="text-align: center">QQ交流群：178498936</p>
 
 <img src="http://47.104.180.148/go-captcha/go-captcha-v2.jpg" alt="Poster">
 
-## Install Module
+<br/>
+
+## Node 开发环境安装
 ```shell
 yarn add go-captcha-jslib
 # or
@@ -25,7 +27,7 @@ pnpm install go-captcha-jslib
 
 ```
 
-### Import Module
+### 引入模块
 ``` javascript
 
 // Import css，Need css-loader processer
@@ -41,8 +43,8 @@ console.log(GoCaptcha)
 ```
 
 
-## Browser Install
-#### Bower Tool
+## 原生开发环境安装
+#### Bower 工具
 ```shell
 bower install wenlng/go-captcha-jslib --save
 ```
@@ -58,7 +60,7 @@ bower install wenlng/go-captcha-jslib --save
 </script>
 ```
 
-#### CDN Import
+#### CDN 方式
 
 ```html
 <!-- Js -->
@@ -71,7 +73,7 @@ bower install wenlng/go-captcha-jslib --save
 </script>
 ```
 
-## Click Mode
+## 点选式
 ```html
 <div id="click-wrap"/>
 
@@ -157,7 +159,7 @@ interface ClickInstanceMethods {
 }
 ```
 
-## Slide Mode
+## 滑动式
 ```html
 <div id="slide-wrap"/>
 
@@ -249,7 +251,7 @@ interface SlideInstanceMethods {
 }
 ```
 
-## Drag-And-Drop Mode
+## 拖拽式
 
 ```html
 <div id="slide-region-wrap"/>
@@ -339,7 +341,7 @@ interface SlideRegionInstanceMethods {
 
 ```
 
-## Rotation Mode
+## 旋转式
 ```html
 <div id="rotate-wrap"/>
 
@@ -426,7 +428,7 @@ interface ClickInstanceMethods {
 ```
 
 
-## Button
+## 按钮
 ```html
 <div id="button-wrap"/>
 
@@ -480,3 +482,9 @@ interface ButtonInstanceMethods {
 }
 
 ```
+
+## 👍 赞助一下
+<div>
+<a href="http://gocaptcha.wencodes.com/sponsor/" target="_blank">http://gocaptcha.wencodes.com/sponsor/</a>
+</div>
+<br/>
