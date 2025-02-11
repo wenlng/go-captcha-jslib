@@ -31,11 +31,11 @@ export class Logic {
     },{ deep: true })
   }
 
-  setPropsConfig(config: ButtonConfig) {
+  setPropsConfig = (config: ButtonConfig) => {
     this.logicProps.config = config
   }
 
-  setPropsState(state: ButtonState ){
+  setPropsState = (state: ButtonState ) => {
     this.logicProps.state = state
   }
 

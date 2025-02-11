@@ -67,15 +67,15 @@ export class Logic {
     this.handler.clearData()
   }
 
-  reset() {
+  reset = () => {
     this.handler.resetData()
   }
 
-  refresh() {
+  refresh = () => {
     this.handler.refresh()
   }
 
-  close() {
+  close = () => {
     this.handler.close()
   }
 
@@ -85,15 +85,15 @@ export class Logic {
     this.localData.angle = 0
   }
 
-  setPropsData(data: RotateData) {
+  setPropsData = (data: RotateData) => {
     this.logicProps.data = data
   }
 
-  setPropsEvent(event: RotateEvent) {
+  setPropsEvent = (event: RotateEvent) => {
     this.logicProps.event = event
   }
 
-  setPropsConfig(config: RotateConfig) {
+  setPropsConfig = (config: RotateConfig) => {
     this.logicProps.config = config
   }
 

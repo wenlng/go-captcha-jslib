@@ -67,15 +67,15 @@ export class Logic {
     this.handler.clearData()
   }
 
-  reset() {
+  reset = () => {
     this.handler.resetData()
   }
 
-  refresh() {
+  refresh = () => {
     this.handler.refresh()
   }
 
-  close() {
+  close = () => {
     this.handler.close()
   }
 
@@ -88,15 +88,15 @@ export class Logic {
     this.localData.thumbHeight = 0
   }
 
-  setPropsData(data: SlideRegionData) {
+  setPropsData = (data: SlideRegionData) => {
     this.logicProps.data = data
   }
 
-  setPropsEvent(event: SlideRegionEvent) {
+  setPropsEvent = (event: SlideRegionEvent) => {
     this.logicProps.event = event
   }
 
-  setPropsConfig(config: SlideRegionConfig) {
+  setPropsConfig = (config: SlideRegionConfig) => {
     this.logicProps.config = config
   }
 

@@ -35,7 +35,7 @@ import "go-captcha-jslib/dist/gocaptcha.global.css"
 import { GoCaptcha } from "go-captcha-jslib";
 console.log(GoCaptcha)
 // OR
-const GoCaptcha = require('go-captcha-jslib')
+const { GoCaptcha } = require('go-captcha-jslib')
 console.log(GoCaptcha)
 
 ```
@@ -62,9 +62,9 @@ bower install wenlng/go-captcha-jslib --save
 
 ```html
 <!-- Js -->
-<script src="https://unpkg.com/go-captcha-jslib@1.0.4/dist/gocaptcha.global.js"></script>
+<script src="https://unpkg.com/go-captcha-jslib@${VERSION}/dist/gocaptcha.global.js"></script>
 <!-- css -->
-<link href="https://unpkg.com/go-captcha-jslib@1.0.4/dist/gocaptcha.global.css" rel="stylesheet">
+<link href="https://unpkg.com/go-captcha-jslib@${VERSION}/dist/gocaptcha.global.css" rel="stylesheet">
 
 <script>
     console.log(window.GoCaptcha)

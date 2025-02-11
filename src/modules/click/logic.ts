@@ -51,15 +51,15 @@ export class Logic {
     this.handler.clearData()
   }
 
-  reset() {
+  reset = () => {
     this.handler.resetData()
   }
 
-  refresh() {
+  refresh = () => {
     this.handler.refresh()
   }
 
-  close() {
+  close = () => {
     this.handler.close()
   }
 
@@ -68,15 +68,15 @@ export class Logic {
     this.localData.thumb = ''
   }
 
-  setPropsData(data: ClickData) {
+  setPropsData = (data: ClickData) => {
     this.logicProps.data = data
   }
 
-  setPropsEvent(event: ClickEvent) {
+  setPropsEvent = (event: ClickEvent) => {
     this.logicProps.event = event
   }
 
-  setPropsConfig(config: ClickConfig) {
+  setPropsConfig = (config: ClickConfig) => {
     this.logicProps.config = config
   }
 

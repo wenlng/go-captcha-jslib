@@ -1,6 +1,16 @@
 const config = require('../rspack.config')
 const {rspack} = require('@rspack/core')
 
+if (config.entry['example']) {
+  delete config.entry['example']
+}
+
+if (config.plugins && Array.isArray(config.plugins)) {
+  config.plugins = config.plugins.filter((plugin) => {
+    return plugin?.name !== 'HtmlRspackPlugin'
+  })
+}
+
 const configList = [
   {
     ...config,
