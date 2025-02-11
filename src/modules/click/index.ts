@@ -7,115 +7,115 @@ import {ClickConfig, ClickData, ClickEvent, defaultClickData, defaultConfig} fro
 //   private el: HTMLElement
 //
 //   constructor(config: ClickConfig = {}) {
-//     this.logic = new Logic()
+//     this._logic = new Logic()
 //     this.setConfig(config)
 //   }
 //
 //   setConfig(config: ClickConfig = {}) {
 //     config = {...defaultConfig(), ...config}
-//     this.logic.setPropsConfig(config)
+//     this._logic.setPropsConfig(config)
 //     return this
 //   }
 //
 //   setData(data: ClickData = {} as ClickData) {
 //     data = {...defaultClickData(), ...data}
-//     this.logic.setPropsData(data)
+//     this._logic.setPropsData(data)
 //     return this
 //
 //   }
 //
 //   setEvents(events: ClickEvent = {}) {
 //     events = {...events}
-//     this.logic.setPropsEvent(events)
+//     this._logic.setPropsEvent(events)
 //     return this
 //   }
 //
 //   mount(el: HTMLElement) {
 //     if (this.el) return
-//     this.logic.mount(el)
+//     this._logic.mount(el)
 //     this.el = el
 //     return this
 //   }
 //
 //   destroy() {
-//     this.logic.unmount()
+//     this._logic.unmount()
 //     this.el = null
 //     return this
 //   }
 //
 //   clear() {
-//     this.logic.clear()
+//     this._logic.clear()
 //   }
 //
 //   reset() {
-//     this.logic.reset()
+//     this._logic.reset()
 //   }
 //
 //   refresh() {
-//     this.logic.refresh()
+//     this._logic.refresh()
 //   }
 //
 //   close() {
-//     this.logic.close()
+//     this._logic.close()
 //   }
 // }
 
 export class ClickCore {
-  logic: Logic
+  private _logic: Logic
 
-  private el: HTMLElement
+  private _el: HTMLElement
 
   constructor(config: ClickConfig = {}) {
-    this.logic = new Logic()
+    this._logic = new Logic()
     this.setConfig(config)
   }
 
   setConfig = (config: ClickConfig = {}) => {
     config = {...defaultConfig(), ...config}
-    this.logic.setPropsConfig(config)
+    this._logic.setPropsConfig(config)
     return this
   }
 
   setData = (data: ClickData = {} as ClickData) => {
     data = {...defaultClickData(), ...data}
-    this.logic.setPropsData(data)
+    this._logic.setPropsData(data)
     return this
 
   }
 
   setEvents = (events: ClickEvent = {}) => {
     events = {...events}
-    this.logic.setPropsEvent(events)
+    this._logic.setPropsEvent(events)
     return this
   }
 
   mount = (el: HTMLElement) => {
-    if (this.el) return
-    this.logic.mount(el)
-    this.el = el
+    if (this._el) return
+    this._logic.mount(el)
+    this._el = el
     return this
   }
 
   destroy = () => {
-    this.logic.unmount()
-    this.el = null
+    this._logic.unmount()
+    this._el = null
     return this
   }
 
   clear = () => {
-    this.logic.clear()
+    this._logic.clear()
   }
 
   reset = () => {
-    this.logic.reset()
+    this._logic.reset()
   }
 
   refresh = () => {
-    this.logic.refresh()
+    this._logic.refresh()
   }
 
   close = () => {
-    this.logic.close()
+    this._logic.close()
   }
 }
 

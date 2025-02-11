@@ -6,71 +6,70 @@ import {ButtonConfig, ButtonState, defaultConfig, defaultState} from "./types";
 //   private el: HTMLElement
 //
 //   constructor(config: ButtonConfig = {}) {
-//     this.logic = new Logic()
+//     this._logic = new Logic()
 //     this.setConfig(config)
 //   }
 //
 //   setConfig(config: ButtonConfig = {}) {
 //     config = {...defaultConfig(), ...config}
-//     this.logic.setPropsConfig(config)
+//     this._logic.setPropsConfig(config)
 //     return this
 //   }
 //
 //   setState(state: ButtonState = {}) {
 //     state = {...defaultState(), ...state}
-//     this.logic.setPropsState(state)
+//     this._logic.setPropsState(state)
 //     return this
 //   }
 //
 //   mount(el: HTMLElement) {
 //     if (this.el) return
-//     this.logic.mount(el)
+//     this._logic.mount(el)
 //     this.el = el
 //     return this
 //   }
 //
 //   destroy() {
-//     this.logic.unmount()
+//     this._logic.unmount()
 //     this.el = null
 //     return this
 //   }
 // }
 
 export class ButtonCore {
-  logic: Logic
-  private el: HTMLElement
+  private _logic: Logic
+  private _el: HTMLElement
 
   constructor(config: ButtonConfig = {}) {
-    this.logic = new Logic()
+    this._logic = new Logic()
     this.setConfig(config)
   }
 
   setConfig = (config: ButtonConfig = {}) => {
     config = {...defaultConfig(), ...config}
-    this.logic.setPropsConfig(config)
+    this._logic.setPropsConfig(config)
     return this
   }
 
   setState = (state: ButtonState = {}) => {
     state = {...defaultState(), ...state}
-    this.logic.setPropsState(state)
+    this._logic.setPropsState(state)
     return this
   }
 
   mount = (el: HTMLElement) => {
-    if (this.el) return
-    this.logic.mount(el)
-    this.el = el
+    if (this._el) return
+    this._logic.mount(el)
+    this._el = el
     return this
   }
 
   destroy = () => {
-    this.logic.unmount()
-    this.el = null
+    this._logic.unmount()
+    this._el = null
     return this
   }
 }
-
 
 export function Button(config: ButtonConfig = {}) {
   const core = new ButtonCore(config)

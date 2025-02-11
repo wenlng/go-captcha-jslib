@@ -162,11 +162,11 @@ export class Logic {
 
     const fn = (event: any) => event.preventDefault()
     onMounted(async () => {
-      this.dragBlockRef.value && this.dragBlockRef.value.addEventListener('dragstart', fn);
+      this.dragBlockRef?.value && this.dragBlockRef.value.addEventListener('dragstart', fn);
     });
 
     onUnmounted(() => {
-      this.dragBlockRef.value && this.dragBlockRef.value.removeEventListener('dragstart', fn);
+      this.dragBlockRef?.value && this.dragBlockRef.value.removeEventListener('dragstart', fn);
     })
 
     return {

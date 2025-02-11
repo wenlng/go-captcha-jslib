@@ -175,11 +175,11 @@ export class Logic {
 
     const fn = (event: any) => event.preventDefault()
     onMounted(async () => {
-      this.tileRef.value && this.tileRef.value.addEventListener('dragstart', fn);
+      this.tileRef?.value && this.tileRef.value.addEventListener('dragstart', fn);
     });
 
     onUnmounted(() => {
-      this.tileRef.value && this.tileRef.value.removeEventListener('dragstart', fn);
+      this.tileRef?.value && this.tileRef.value.removeEventListener('dragstart', fn);
     })
 
     return {
