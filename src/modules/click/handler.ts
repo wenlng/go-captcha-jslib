@@ -4,8 +4,8 @@
  * @Email wengaolng@gmail.com
  **/
 import {ClickData, ClickDot, ClickEvent} from "./types";
-import {deepCopyObject, getDomXY} from "../../helper/helper";
-import {ref} from "../../libs/render";
+import {deepCopyObject, getDomXY} from "@/helper/helper";
+import {ref} from "@/libs/render";
 
 export interface handlerType {
   dots: {value: []}

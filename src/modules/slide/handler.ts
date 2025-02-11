@@ -1,6 +1,6 @@
 import {SlideData, SlideEvent, SlideConfig} from "./types";
-import {reactive} from "../../libs/render";
-import {checkTargetFather} from "../../helper/helper";
+import {reactive} from "@/libs/render";
+import {checkTargetFather} from "@/helper/helper";
 
 export interface handlerType {
   state: {} | any

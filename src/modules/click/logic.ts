@@ -2,10 +2,10 @@ import {
   makeCloseSvgIcon,
   makeLoadingSvgIcon,
   makeRefreshSvgIcon,
-} from "../../icons/icons";
-import {computed, h, reactive, render, watch} from "../../libs/render";
+} from "@/icons/icons";
+import {computed, h, reactive, render, watch} from "@/libs/render";
 import {ClickConfig, ClickData, ClickEvent, defaultConfig, defaultClickData, ClickDot} from "./types";
-import {deepCopyObject} from "../../helper/helper";
+import {deepCopyObject} from "@/helper/helper";
 import {handlerType, useHandler} from "./handler";
 
 export class Logic {

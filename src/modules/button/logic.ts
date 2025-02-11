@@ -1,9 +1,9 @@
 import {
   makeBtnDefaultSvgIcon, makeBtnErrorSvgIcon, makeBtnSuccessSvgIcon, makeBtnWarnSvgIcon,
-} from "../../icons/icons";
-import {computed, h, reactive, render, watch} from "../../libs/render";
+} from "@/icons/icons";
+import {computed, h, reactive, render, watch} from "@/libs/render";
 import {ButtonConfig, ButtonState, defaultConfig, defaultState} from "./types";
-import {deepCopyObject} from "../../helper/helper";
+import {deepCopyObject} from "@/helper/helper";
 
 export class Logic {
   name: string = "ButtonComponent"

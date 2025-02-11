@@ -1,6 +1,6 @@
 {
   "name": "go-captcha-jslib",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "description": "GoCaptcha for Javascript, which implements click mode, slider mode, drag-drop mode and rotation mode.",
   "keywords": [
@@ -18,7 +18,13 @@
   "scripts": {
     "dev": "rspack serve",
     "build": "rspack build",
-    "build:dist": "node ./scripts/build.js"
+    "build:rspack": "node ./scripts/rspack.build.js",
+    "esbuild:scss": "node scripts/esbuild.js -f scss",
+    "esbuild:esm": "node scripts/esbuild.js -f esm",
+    "esbuild:cjs": "node scripts/esbuild.js -f cjs",
+    "esbuild:global": "node scripts/esbuild.js -f global",
+    "ts-types": "npx tsc -p tsconfig.json",
+    "build:dist": "npm run ts-types && npm run esbuild:scss && npm run esbuild:global && npm run esbuild:esm && npm run esbuild:cjs"
   },
   "homepage": "https://github.com/wenlng/go-captcha-jslib",
   "bugs": {
@@ -42,15 +48,15 @@
   "exports": {
     ".": {
       "node": {
-        "module": "./dist/gocaptcha.cjs.js",
+        "module": "./dist/gocaptcha.esm.js",
         "require": "./dist/gocaptcha.cjs.js",
         "import": "./index.mjs"
       },
       "browser": {
-        "import": "./dist/gocaptcha.cjs.js",
+        "import": "./dist/gocaptcha.esm.js",
         "require": "./dist/gocaptcha.cjs.js"
       },
-      "default": "./dist/gocaptcha.cjs.js"
+      "default": "./dist/gocaptcha.esm.js"
     },
     "./package.json": "./package.json",
     "./dist/*": "./dist/*"
@@ -61,8 +67,12 @@
   "devDependencies": {
     "@rspack/cli": "^1.1.1",
     "@rspack/core": "^1.1.1",
+    "esbuild": "^0.25.0",
+    "esbuild-sass-plugin": "^3.3.1",
+    "minimist": "^1.2.8",
     "node-sass": "^9.0.0",
     "sass-loader": "^16.0.3",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   }
 }

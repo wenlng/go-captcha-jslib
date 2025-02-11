@@ -11,7 +11,7 @@ const config = defineConfig({
     css: true,
   },
   entry: {
-    gocaptcha: './src/index.ts',
+    gocaptcha: './src/index.rspack.ts',
     example: './example/index.ts',
   },
   output: {

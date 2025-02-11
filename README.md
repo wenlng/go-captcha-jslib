@@ -32,10 +32,10 @@ pnpm install go-captcha-jslib
 import "go-captcha-jslib/dist/gocaptcha.global.css"
 
 // Import Module
-import { GoCaptcha } from "go-captcha-jslib";
+import GoCaptcha from "go-captcha-jslib";
 console.log(GoCaptcha)
 // OR
-const { GoCaptcha } = require('go-captcha-jslib')
+const GoCaptcha = require('go-captcha-jslib')
 console.log(GoCaptcha)
 
 ```
@@ -47,9 +47,8 @@ console.log(GoCaptcha)
 bower install wenlng/go-captcha-jslib --save
 ```
 ```html
-
 <!-- css -->
-<link href="/bower_components/go-captcha-jslib/dist/gocaptcha.global.css" rel="stylesheet">
+<link href="/bower_components/go-captcha-jslib/dist/gocaptcha.css" rel="stylesheet">
 <!-- Js -->
 <script src="/bower_components/go-captcha-jslib/dist/gocaptcha.global.js"></script>
 
@@ -61,10 +60,11 @@ bower install wenlng/go-captcha-jslib --save
 #### CDN Import
 
 ```html
+<!-- format: https://unpkg.com/go-captcha-jslib@1.0.0/dist/gocaptcha.xyz.s -->
 <!-- Js -->
 <script src="https://unpkg.com/go-captcha-jslib@${VERSION}/dist/gocaptcha.global.js"></script>
 <!-- css -->
-<link href="https://unpkg.com/go-captcha-jslib@${VERSION}/dist/gocaptcha.global.css" rel="stylesheet">
+<link href="https://unpkg.com/go-captcha-jslib@${VERSION}/dist/gocaptcha.css" rel="stylesheet">
 
 <script>
     console.log(window.GoCaptcha)

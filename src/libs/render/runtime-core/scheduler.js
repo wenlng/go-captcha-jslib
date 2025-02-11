@@ -1,1 +1,1 @@
-const queue=[];let isFlushing=!1;const resolvePromise=Promise.resolve();export function queueJob(e){queue.includes(e)||queue.push(e),isFlushing||(isFlushing=!0,resolvePromise.then((()=>{isFlushing=!1;const e=queue.slice(0);queue.length=0,e.forEach((e=>e())),e.length=0})))}
+const queue=[];let isQueueFlushing=!1;const resolvePromise=Promise.resolve();export function queueJob(e){queue.includes(e)||queue.push(e),isQueueFlushing||(isQueueFlushing=!0,resolvePromise.then((()=>{isQueueFlushing=!1;const e=queue.slice(0);queue.length=0,e.forEach((e=>e())),e.length=0})))}

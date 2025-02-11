@@ -4,8 +4,27 @@
       "types": ["@rspack/core/module"],
       "isolatedModules": true
     },
+    "paths": {
+      "@/*": ["./src/*"],
+    },
     "include": [
       "./src"
     ]
   },
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "outDir": "./.build-cache",
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+    }
+  },
+  "include": [
+    "index.ts",
+    "./src",
+  ]
 }

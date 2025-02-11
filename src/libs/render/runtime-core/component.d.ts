@@ -18,7 +18,7 @@ export declare function createComponentInstance(vnode: any, parent: any): {
 };
 export declare function initSlots(instance: any, children: any): void;
 export declare function setupComponent(instance: any): void;
-export declare let currentInstance: any;
+export declare let currentAppInstance: any;
 export declare const getCurrentInstance: () => any;
 export declare const setCurrentInstance: (instance: any) => void;
 export declare const unsetCurrentInstance: () => void;

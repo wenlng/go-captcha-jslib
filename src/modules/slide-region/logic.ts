@@ -2,10 +2,10 @@ import {
   makeCloseSvgIcon,
   makeLoadingSvgIcon,
   makeRefreshSvgIcon,
-} from "../../icons/icons";
-import {computed, h, onMounted, onUnmounted, reactive, ref, render, watch} from "../../libs/render";
+} from "@/icons/icons";
+import {computed, h, onMounted, onUnmounted, reactive, ref, render, watch} from "@/libs/render";
 import {SlideRegionConfig, SlideRegionData, SlideRegionEvent, defaultConfig, defaultSlideRegionData} from "./types";
-import {deepCopyObject} from "../../helper/helper";
+import {deepCopyObject} from "@/helper/helper";
 import {handlerType, useHandler} from "./handler";
 
 export class Logic {
