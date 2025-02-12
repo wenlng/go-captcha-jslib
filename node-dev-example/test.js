@@ -1,4 +1,4 @@
-const {GoCaptcha} = require('../dist/gocaptcha.cjs')
+const GoCaptcha = require('../dist/gocaptcha.cjs')
 
 console.log(new GoCaptcha.Button())
 console.log(new GoCaptcha.Click())

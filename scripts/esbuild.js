@@ -2,6 +2,7 @@ const args = require('minimist')(process.argv.slice(2))
 const {resolve} = require('path')
 const {build} = require('esbuild')
 const {sassPlugin} = require('esbuild-sass-plugin');
+const dtsPlugin = require('esbuild-plugin-d.ts');
 
 // const pkg = require(resolve(__dirname, `../package.json`))
 const pkgName = 'gocaptcha'
@@ -32,7 +33,8 @@ const outputFormat = format.startsWith('global') ? 'iife' : format === 'cjs' ? '
 // js
 const outfileMin = resolve(__dirname, `../dist/${target}.${format}.js`)
 build({
-  entryPoints: [resolve(__dirname, `../.build-cache/index.js`)],
+  // entryPoints: [resolve(__dirname, `../.build-cache/index.js`)],
+  entryPoints: [resolve(__dirname, `../src/index.ts`)],
   outfile: outfileMin,
   bundle: true,
   sourcemap: false,
@@ -40,6 +42,8 @@ build({
   globalName: 'GoCaptcha',
   platform: format === 'cjs' ? 'node' : 'browser',
   minify: true,
+  tsconfig: resolve(__dirname, `../tsconfig.json`),
+  plugins: [dtsPlugin.default()],
   // plugins: [sassPlugin()],
   // loader: { '.scss': 'text' },
   external: ['*.scss']

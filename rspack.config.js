@@ -11,13 +11,14 @@ const config = defineConfig({
     css: true,
   },
   entry: {
-    gocaptcha: './src/index.rspack.ts',
+    scss: './src/scss/go-captcha.scss',
+    gocaptcha: './src/index.ts',
     example: './example/index.ts',
   },
   output: {
     clean: true,
-
     library: {
+      name: 'GoCaptcha',
       type: 'umd',
     },
     globalObject: 'this',

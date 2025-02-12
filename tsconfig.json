@@ -2,7 +2,7 @@
   "ts-node": {
     "compilerOptions": {
       "types": ["@rspack/core/module"],
-      "isolatedModules": true
+      "isolatedModules": true,
     },
     "paths": {
       "@/*": ["./src/*"],
@@ -16,15 +16,15 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "outDir": "./.build-cache",
+    "outDir": "./dist",
     "declaration": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["src/*"],
     }
   },
   "include": [
-    "index.ts",
-    "./src",
-  ]
+    "src",
+  ],
+  "exclude": ["node_modules"]
 }
