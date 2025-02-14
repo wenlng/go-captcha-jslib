@@ -1,6 +1,6 @@
 {
   "name": "go-captcha-jslib",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": false,
   "description": "GoCaptcha for Javascript, which implements click mode, slider mode, drag-drop mode and rotation mode.",
   "keywords": [
@@ -23,7 +23,7 @@
     "build:es:esm": "node scripts/esbuild.js -f esm",
     "build:es:cjs": "node scripts/esbuild.js -f cjs",
     "build:es:global": "node scripts/esbuild.js -f global",
-    "build": "npm run build:es:scss && npm run build:es:global && npm run build:es:esm && npm run esbuild:cjs"
+    "build": "npm run build:es:scss && npm run build:es:global && npm run build:es:esm && npm run build:es:cjs"
   },
   "homepage": "https://github.com/wenlng/go-captcha-jslib",
   "bugs": {

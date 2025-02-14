@@ -11,3 +11,11 @@ export {
   SlideRegion,
   Rotate
 }
+
+export default {
+  Button,
+  Click,
+  Slide,
+  SlideRegion,
+  Rotate
+}
