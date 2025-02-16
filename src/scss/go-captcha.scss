@@ -21,6 +21,10 @@
     --go-captcha-theme-loading-icon-color: #3e7cff;
     --go-captcha-theme-body-bg-color: #34383e;
 
+    --go-captcha-theme-dot-color: #cedffe;
+    --go-captcha-theme-dot-bg-color: #3e7cff;
+    --go-captcha-theme-dot-border-color: #f7f9fb;
+
     --go-captcha-theme-default-color: #3e7cff;
     --go-captcha-theme-default-bg-color: #ecf5ff;
     --go-captcha-theme-default-border-color: #3e7cff;
@@ -42,7 +46,7 @@
 .go-captcha {
     &.gc-wrapper {
         padding: 12px 16px;
-        background-color: var(--go-captcha-theme-bg-color);
+        //background-color: var(--go-captcha-theme-bg-color);
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -62,6 +66,10 @@
         box-shadow: 0 0 20px rgba(100, 100, 100, 0.1);
         -webkit-box-shadow: 0 0 20px rgba(100, 100, 100, 0.1);
         -moz-box-shadow: 0 0 20px rgba(100, 100, 100, 0.1);
+
+        &.gc-wrapper {
+            background-color: var(--go-captcha-theme-bg-color);
+        }
     }
 
     .gc-header {
@@ -114,6 +122,7 @@
         overflow: hidden;
 
         .gc-body-inner{
+            position: relative;
             background: var(--go-captcha-theme-body-bg-color);
         }
     }
@@ -333,9 +342,10 @@
             z-index: 2;
             width: 22px;
             height: 22px;
-            color: #cedffe;
-            background: #3e7cff;
+            color: var(--go-captcha-theme-dot-color);
+            background:  var(--go-captcha-theme-dot-bg-color);;
             border: 3px solid #f7f9fb;
+            border-color: var(--go-captcha-theme-dot-border-color);
             display:-webkit-box;
             display:-webkit-flex;
             display:-ms-flexbox;
@@ -433,6 +443,15 @@
             left: 0;
             right: 0;
             bottom: 0;
+
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             img{
                 max-width: 100%;
                 max-height: 100%;

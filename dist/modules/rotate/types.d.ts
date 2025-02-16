@@ -19,6 +19,7 @@ export interface RotateData {
     angle: number;
     image: string;
     thumb: string;
+    thumbSize: number;
 }
 export declare const defaultRotateData: () => RotateData;
 export interface RotateEvent {

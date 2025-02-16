@@ -31,9 +31,9 @@ export class Logic {
   iconStyles: any
   handler: handlerType
 
-  rootRef = ref(null)
-  dragBarRef = ref(null)
-  dragBlockRef = ref(null)
+  rootRef: any = ref(null)
+  dragBarRef: any = ref(null)
+  dragBlockRef: any = ref(null)
 
   private unmountFn: any
 
@@ -118,7 +118,7 @@ export class Logic {
     })
 
     this.hasDisplayImageState = computed(() => {
-      return localData.image != '' || localData.thumb != ''
+      return (localData.image && localData.image.length > 0) || (localData.thumb && localData.thumb.length > 0)
     })
 
     this.hasDisplayWrapperState = computed(() => {
@@ -139,7 +139,11 @@ export class Logic {
       const thumbAngle = this.handler.state.thumbAngle
 
       return {
-        transform: `rotate(${thumbAngle}deg)`
+        transform: `rotate(${thumbAngle}deg)`,
+        ...(localData.thumbSize > 0 ? {
+          width: localData.thumbSize + "px",
+          height: localData.thumbSize + "px"
+        } : {})
       }
     })
 

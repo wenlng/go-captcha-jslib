@@ -103,7 +103,7 @@ export class Logic {
     })
 
     this.hasDisplayImageState = computed(() => {
-      return localData.image != '' || localData.thumb != ''
+      return (localData.image && localData.image.length > 0) || (localData.thumb && localData.thumb.length > 0)
     })
 
     this.hasDisplayWrapperState = computed(() => {

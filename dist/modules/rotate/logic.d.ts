@@ -14,27 +14,9 @@ export declare class Logic {
     imageStyles: any;
     iconStyles: any;
     handler: handlerType;
-    rootRef: {
-        rawValue: any;
-        __v_isRef: boolean;
-        _value: any;
-        dep: any;
-        value: any;
-    };
-    dragBarRef: {
-        rawValue: any;
-        __v_isRef: boolean;
-        _value: any;
-        dep: any;
-        value: any;
-    };
-    dragBlockRef: {
-        rawValue: any;
-        __v_isRef: boolean;
-        _value: any;
-        dep: any;
-        value: any;
-    };
+    rootRef: any;
+    dragBarRef: any;
+    dragBlockRef: any;
     private unmountFn;
     constructor();
     clear: () => void;
@@ -46,27 +28,9 @@ export declare class Logic {
     setPropsEvent: (event: RotateEvent) => void;
     setPropsConfig: (config: RotateConfig) => void;
     setup: () => {
-        rootRef: {
-            rawValue: any;
-            __v_isRef: boolean;
-            _value: any;
-            dep: any;
-            value: any;
-        };
-        dragBlockRef: {
-            rawValue: any;
-            __v_isRef: boolean;
-            _value: any;
-            dep: any;
-            value: any;
-        };
-        dragBarRef: {
-            rawValue: any;
-            __v_isRef: boolean;
-            _value: any;
-            dep: any;
-            value: any;
-        };
+        rootRef: any;
+        dragBlockRef: any;
+        dragBarRef: any;
     };
     render: (props: {}) => {
         __v_isVnode: boolean;

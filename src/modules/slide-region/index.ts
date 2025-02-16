@@ -1,65 +1,6 @@
 import {Logic} from "./logic";
 import {SlideRegionConfig, SlideRegionData, SlideRegionEvent, defaultSlideRegionData, defaultConfig} from "./types";
 
-// export class SlideRegion {
-//   logic: Logic
-//
-//   private el: HTMLElement
-//
-//   constructor(config: SlideRegionConfig = {}) {
-//     this._logic = new Logic()
-//     this.setConfig(config)
-//   }
-//
-//   setConfig(config: SlideRegionConfig = {}) {
-//     config = {...defaultConfig(), ...config}
-//     this._logic.setPropsConfig(config)
-//     return this
-//   }
-//
-//   setData(data: SlideRegionData = {} as SlideRegionData) {
-//     data = {...defaultSlideRegionData(), ...data}
-//     this._logic.setPropsData(data)
-//     return this
-//
-//   }
-//
-//   setEvents(events: SlideRegionEvent = {}) {
-//     events = {...events}
-//     this._logic.setPropsEvent(events)
-//     return this
-//   }
-//
-//   mount(el: HTMLElement) {
-//     if (this.el) return
-//     this._logic.mount(el)
-//     this.el = el
-//     return this
-//   }
-//
-//   destroy() {
-//     this._logic.unmount()
-//     this.el = null
-//     return this
-//   }
-//
-//   clear() {
-//     this._logic.clear()
-//   }
-//
-//   reset() {
-//     this._logic.reset()
-//   }
-//
-//   refresh() {
-//     this._logic.refresh()
-//   }
-//
-//   close() {
-//     this._logic.close()
-//   }
-// }
-
 export class SlideRegionCore {
   private _logic: Logic
 

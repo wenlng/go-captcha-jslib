@@ -1,6 +1,6 @@
 {
   "name": "go-captcha-jslib",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": false,
   "description": "GoCaptcha for Javascript, which implements click mode, slider mode, drag-drop mode and rotation mode.",
   "keywords": [
@@ -36,7 +36,8 @@
     "type": "git",
     "url": "git+https://github.com/wenlng/go-captcha-jslib.git"
   },
-  "author": "Awen",
+  "email": "wengaolng@gmail.com",
+  "author": "Awen <wengaolng@gmail.com>",
   "license": "MIT",
   "main": "index.js",
   "types": "./dist/index.d.ts",

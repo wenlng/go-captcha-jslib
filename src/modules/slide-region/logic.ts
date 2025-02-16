@@ -31,9 +31,9 @@ export class Logic {
   iconStyles: any
   handler: handlerType
 
-  rootRef = ref(null)
-  containerRef = ref(null)
-  tileRef = ref(null)
+  rootRef: any = ref(null)
+  containerRef: any = ref(null)
+  tileRef: any = ref(null)
 
   private unmountFn: any
 
@@ -121,7 +121,7 @@ export class Logic {
     })
 
     this.hasDisplayImageState = computed(() => {
-      return localData.image != '' || localData.thumb != ''
+      return (localData.image && localData.image.length > 0) || (localData.thumb && localData.thumb.length > 0)
     })
 
     this.hasDisplayWrapperState = computed(() => {

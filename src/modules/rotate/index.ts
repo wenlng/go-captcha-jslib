@@ -1,65 +1,6 @@
 import {Logic} from "./logic";
 import {RotateConfig, RotateData, RotateEvent, defaultRotateData, defaultConfig} from "./types";
 
-// export class Rotate {
-//   logic: Logic
-//
-//   private el: HTMLElement
-//
-//   constructor(config: RotateConfig = {}) {
-//     this._logic = new Logic()
-//     this.setConfig(config)
-//   }
-//
-//   setConfig(config: RotateConfig = {}) {
-//     config = {...defaultConfig(), ...config}
-//     this._logic.setPropsConfig(config)
-//     return this
-//   }
-//
-//   setData(data: RotateData = {} as RotateData) {
-//     data = {...defaultRotateData(), ...data}
-//     this._logic.setPropsData(data)
-//     return this
-//
-//   }
-//
-//   setEvents(events: RotateEvent = {}) {
-//     events = {...events}
-//     this._logic.setPropsEvent(events)
-//     return this
-//   }
-//
-//   mount(el: HTMLElement) {
-//     if (this.el) return
-//     this._logic.mount(el)
-//     this.el = el
-//     return this
-//   }
-//
-//   destroy() {
-//     this._logic.unmount()
-//     this.el = null
-//     return this
-//   }
-//
-//   clear() {
-//     this._logic.clear()
-//   }
-//
-//   reset() {
-//     this._logic.reset()
-//   }
-//
-//   refresh() {
-//     this._logic.refresh()
-//   }
-//
-//   close() {
-//     this._logic.close()
-//   }
-// }
-
 export class RotateCore {
   private _logic: Logic
 

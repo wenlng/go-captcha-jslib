@@ -7,6 +7,7 @@ export const RotateExample = () => {
   const capt = new GoCaptcha.Rotate({
     width: 300,
     height: 220,
+    thumbSize: 190
   })
 
   capt.mount(el)
@@ -33,7 +34,7 @@ export const RotateExample = () => {
         capt.setData({
           image: RotateImage,
           thumb: RotateThumbImage,
-          angle: 130,
+          thumbSize: 190
         })
       }, 1000)
     },
@@ -46,7 +47,7 @@ export const RotateExample = () => {
     capt.setData({
       image: RotateImage,
       thumb: RotateThumbImage,
-      angle: 20,
+      thumbSize: 190,
     })
   }, 500)
 
