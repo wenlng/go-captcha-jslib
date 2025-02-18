@@ -2,7 +2,7 @@
   "name": "go-captcha-jslib",
   "version": "1.0.9",
   "private": false,
-  "description": "GoCaptcha for Javascript, which implements click mode, slider mode, drag-drop mode and rotation mode.",
+  "description": "GoCaptcha of Javascript, which implements click mode, slider mode, drag-drop mode and rotation mode.",
   "keywords": [
     "go-captcha-js",
     "go-captcha-javascript",
