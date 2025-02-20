@@ -1,7 +1,13 @@
 <div align="center">
-<img width="120" style="padding-top: 50px; margin: 0;" src="http://47.104.180.148/go-captcha/gocaptcha_logo.svg?v=1"/>
+<img width="120" style="padding-top: 50px; margin: 0;" src="https://github.com/wenlng/git-assets/blob/master/go-captcha/gocaptcha_logo.svg?raw=true"/>
 <h1 style="margin: 0; padding: 0">Go Captcha</h1>
 <p>Behavior Captcha Of Javascript</p>
+
+<a href="https://github.com/wenlng/go-captcha-jslib/releases"><img src="https://img.shields.io/github/v/release/wenlng/go-captcha-jslib.svg"/></a>
+<a href="https://www.npmjs.com/package/go-captcha-jslib"><img src="https://img.shields.io/npm/v/go-captcha-jslib"/></a>
+<a href="https://github.com/wenlng/go-captcha-jslib/blob/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg"/></a>
+<a href="https://github.com/wenlng/go-captcha-jslib"><img src="https://img.shields.io/github/stars/wenlng/go-captcha-jslib.svg"/></a>
+<a href="https://github.com/wenlng/go-captcha-jslib"><img src="https://img.shields.io/github/last-commit/wenlng/go-captcha-jslib.svg"/></a>
 
 </div>
 
